@@ -28,3 +28,15 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+
+    console.log('Имя:', name);
+    console.log('Телефон:', phone);
+
+    alert('Форма отправлена!');
+});
