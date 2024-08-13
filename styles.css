@@ -64,18 +64,13 @@ header {
 }
 
 .characteristic {
-  height: 464px;
+  height: 564px;
   background-color: #231f21;
   color: #fff;
   background-size: cover;
 }
-.characteristic h1 {
-  padding: 59.77px 0 0 100px;
-  font-size: 36px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 46px;
+.titleCH {
+  padding: 55px 0 0 100px;
 }
 .features {
   display: grid;
@@ -151,7 +146,7 @@ header {
 .blue-line {
   width: 2px;
   height: 38px;
-  background: #03927E;
+  background: #03927e;
 }
 .cursiv-texts {
   display: flex;
@@ -193,7 +188,7 @@ header {
 }
 
 .location-text {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: #333;
   display: flex;
   justify-content: center;
@@ -203,7 +198,8 @@ header {
   padding: 20px;
 }
 
-.title {
+.title-our {
+  font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   margin-bottom: 10px;
   letter-spacing: 0.1em;
@@ -232,4 +228,75 @@ header {
 
 .locations img {
   width: 100%;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.photoGallery {
+  text-align: center;
+  padding: 60px 56px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.fade img {
+  width: 100%;
+  height: 70vh;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
 }
